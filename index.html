@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | News homepage</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="modal">
+      <div class="modal-left"></div>
+      <div class="modal-right">
+        <div style="display: flex; justify-content: flex-end">
+          <button class="close"></button>
+        </div>
+        <nav class="modal-nav">
+          <ul>
+            <li class="modal-li"><a href="#" class="modal-a"> Home </a></li>
+            <li class="modal-li"><a href="#" class="modal-a"> New </a></li>
+            <li class="modal-li"><a href="#" class="modal-a"> Popular </a></li>
+            <li class="modal-li"><a href="#" class="modal-a"> Trending </a></li>
+            <li class="modal-li">
+              <a href="#" class="modal-a"> Categories </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <header>
+      <nav>
+        <a href="#">
+          <img src="./assets/images/logo.svg" alt="Logo" />
+        </a>
+        <button class="menu"></button>
+      </nav>
+    </header>
+    <div class="main">
+      <div class="main-content">
+        <img
+          class="main-image"
+          src="./assets/images/image-web-3-mobile.jpg"
+          alt="Image"
+        />
+        <div class="main-title"><h1>The Bright Future of Web 3.0?</h1></div>
+        <div class="main-text">
+          <p>
+            We dive into the next evolution of the web that claims to put the
+            power of the platforms back into the hands of the people. But is it
+            really fulfilling its promise?
+          </p>
+          <button class="read">READ MORE</button>
+        </div>
+      </div>
+      <div class="news-container">
+        <span>New</span>
+      </div>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
