@@ -127,7 +127,7 @@ h1 {
 .read {
   color: var(--white);
   width: 50%;
-  height: 2rem;
+  height: 2.5rem;
   background-color: var(--red);
   border: none;
   outline: none;
@@ -194,7 +194,7 @@ dd {
   padding-left: 1rem;
   padding-right: 1rem;
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 3fr);
   row-gap: 1.5rem;
 }
 
@@ -225,4 +225,102 @@ dd {
 .others-p {
   color: var(--dark-gray-blue);
   font-size: 0.9rem;
+}
+
+.responsive-nav {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .responsive-nav {
+    display: flex;
+    margin-right: -1.2rem;
+  }
+  .responsive-nav > li {
+    margin: 0 1rem;
+  }
+  header {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+  }
+
+  .main {
+    width: 75%;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .title-text {
+    display: flex;
+    height: 40%;
+  }
+
+  .main-title {
+    width: 50%;
+  }
+
+  .main-title > h1 {
+    font-size: 3.2rem;
+  }
+  .main-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+  }
+
+  .main-content {
+    width: 75%;
+  }
+  .news-container {
+    width: 25%;
+    margin-top: 0;
+    margin-left: 1.5rem;
+    min-height: 100%;
+  }
+
+  .others {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .divisor {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  dl {
+    margin-top: 1rem;
+  }
+
+  .topic-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .others {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+  }
+
+  .topic-content > span {
+    font-size: 2rem;
+  }
+  .new {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
 }
